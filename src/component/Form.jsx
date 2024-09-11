@@ -43,6 +43,18 @@ function Form() {
     setNameError('');
   };
 
+  // Handle mobile number change and validation
+  const handleMobileChange = (e) => {
+    const value = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
+    setMobileNumber(value);
+
+    if (value.length !== 10) {
+      setMobileError('Mobile number must be exactly 10 digits');
+    } else {
+      setMobileError('');
+    }
+  };
+
   // Handle form submission
   const handleSubmit = () => {
     let hasError = false;
@@ -103,6 +115,7 @@ function Form() {
     borderRadius: '8px',
     padding: '8px',
   };
+  
   const containerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -192,12 +205,8 @@ function Form() {
           id="mobilenumber"
           label="Mobile Number"
           value={mobileNumber}
-          countryCode="+91"
-          isTelephone
-          onChange={(e) => {
-            setMobileNumber(e.target.value);
-            setMobileError('');
-          }}
+          placeholder="Enter 10-digit mobile number"
+          onChange={handleMobileChange}
           style={{ borderColor: mobileError ? 'red' : '#d1d5db', borderRadius: '8px', width: '150px' }}
           validationMessage={mobileError}
           validationMessageStatus={mobileError ? 'error' : 'default'}
