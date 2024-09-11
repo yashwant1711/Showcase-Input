@@ -1,0 +1,59 @@
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  .input-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .input-section h3 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Add some space between multiple inputs in the same section */
+  .input-section .yashwant-input:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the current value display */
+  .current-value {
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .app-container {
+      padding: 10px;
+    }
+  
+    .input-section {
+      padding: 15px;
+    }
+}

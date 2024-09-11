@@ -1,0 +1,64 @@
+/* home.css */
+
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0056b3; /* A shade of blue for the main heading */
+  }
+  
+  .home-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .input-demo-section {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Light background for the demo section */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .input-demo-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .usage-section,
+  .documentation-section {
+    margin-top: 30px;
+  }
+  
+  .usage-section h2,
+  .documentation-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
