@@ -205,6 +205,8 @@ function Form() {
           id="mobilenumber"
           label="Mobile Number"
           value={mobileNumber}
+          countryCode="+91"
+          isTelephone
           placeholder="Enter 10-digit mobile number"
           onChange={handleMobileChange}
           style={{ borderColor: mobileError ? 'red' : '#d1d5db', borderRadius: '8px', width: '150px' }}
